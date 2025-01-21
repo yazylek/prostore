@@ -8,7 +8,6 @@ import { useFormStatus } from "react-dom";
 import Link from "next/link";
 import { signInWithCredentials } from "@/lib/actions/user.actions";
 import { useSearchParams } from "next/navigation";
-
 export default function CredentialsSignInForm() {
   const [data, action] = useActionState(signInWithCredentials, {
     success: false,
